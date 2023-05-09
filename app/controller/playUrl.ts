@@ -16,7 +16,7 @@ export default class PlayUrl extends BaseController {
     }
 
     const res = await service.playUrl.getPlayUrl(mid, type, br)
-
+    res.mid = mid
     ctx.body = res
   }
 }

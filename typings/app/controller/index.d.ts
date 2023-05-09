@@ -2,9 +2,9 @@
 // Do not modify this file!!!!!!!!!
 
 import 'egg';
+import ExportBaseController from '../../../app/controller/BaseController';
 import ExportAlbumInfo from '../../../app/controller/albumInfo';
 import ExportBanner from '../../../app/controller/banner';
-import ExportBaseController from '../../../app/controller/BaseController';
 import ExportComment from '../../../app/controller/comment';
 import ExportGetTagList from '../../../app/controller/getTagList';
 import ExportLrc from '../../../app/controller/lrc';
@@ -22,9 +22,9 @@ import ExportSinger from '../../../app/controller/singer';
 
 declare module 'egg' {
   interface IController {
+    baseController: ExportBaseController;
     albumInfo: ExportAlbumInfo;
     banner: ExportBanner;
-    baseController: ExportBaseController;
     comment: ExportComment;
     getTagList: ExportGetTagList;
     lrc: ExportLrc;

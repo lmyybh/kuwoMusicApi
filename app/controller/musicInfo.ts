@@ -16,7 +16,7 @@ export default class MusicInfo extends BaseController {
     }
 
     const res = await service.musicInfo.getList(mid)
-
+    res.mid = mid
     ctx.body = res
   }
 }
